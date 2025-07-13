@@ -9,16 +9,16 @@ const Details = () => {
     name: auth?.user?.name || "N/A",
     email: auth?.user?.email || "N/A",
     role: auth?.user?.role || "Administrator",
-    phone: auth?.user?.phone || "N/A",
-    address: auth?.user?.address || "N/A",
+    phone: auth?.user?.phone || "+977-9851122519",
+    address: auth?.user?.address || "Charikot, Dolakha District, Nepal",
     createdAt: auth?.user?.createdAt ? new Date(auth.user.createdAt).toLocaleDateString() : "N/A",
   };
 
   const stats = [
     { label: "Total Bookings", value: "156", change: "+12%", changeType: "positive" },
-    { label: "Active Rooms", value: "24", change: "+2", changeType: "positive" },
+    { label: "Active Rooms", value: "6", change: "+2", changeType: "positive" },
     { label: "Pending Messages", value: "8", change: "-3", changeType: "negative" },
-    { label: "Revenue (Monthly)", value: "$45,230", change: "+8.2%", changeType: "positive" },
+    { label: "Revenue (Monthly)", value: "Rs 90000", change: "+8.2%", changeType: "positive" },
   ];
 
   return (
