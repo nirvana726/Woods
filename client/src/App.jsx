@@ -14,7 +14,6 @@ import CreateCategory from "./pages/Admin/CreateCategory";
 import AllPost from "./pages/Admin/AllPost";
 import AllTrip from "./pages/Admin/AllTrip";
 import UpdatePost from "./pages/Admin/UpdatePost";
-import Payment from "./pages/Payment";
 import ThankYou from "./components/ThankYou";
 import SelectedCategory from "./pages/SelectedCategory";
 import Contact from "./pages/Contact";
@@ -62,7 +61,6 @@ function App() {
         <Route path="/cancellation" element={<Cancellation />} />
         <Route path="/guest-guidelines" element={<GuestGuidelines />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/payment" element={<Payment />} />
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/category/:slug" element={<SelectedCategory />} />
 
